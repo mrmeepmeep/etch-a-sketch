@@ -10,13 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(165, 87, 87, 0.224);
 }
 .container-2 {
     display: flex;
 }
 #main-heading{
     text-align: center;
-    margin-bottom: 16px;
+    margin-right: 50px;
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
     border-color:rgba(0, 0, 0, 0.300);
     border-radius: 0px 16px 16px 0px;
     border-style: solid solid solid none;
-    padding: 50px;
+    padding: 30px;
 }
 
 .newDiv {
@@ -43,15 +44,24 @@ body {
     display: flex;
     justify-content: center;
     height: 5;
-    padding: 10px 15px;
+    padding: 10px 16px;
     background-color:rgba(128, 128, 128, 0.350);
-    margin-top: 35px;
+    margin-top: 38px;
     flex-direction: column;
     gap: 16px;
     border-radius: 16px 0px 0px 16px;
     border-style: solid none solid solid;
     border-color: rgba(0, 0, 0, 0.300);
 
+}
+
+.buttons button {
+    border-style: none;
+    background-color: rgba(151, 137, 137, 0.35);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 0 3px;
+    color: rgba(0, 0, 0, 0.500);
 }
 #eraser {
     margin-top: 150px;
