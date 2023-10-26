@@ -6,7 +6,6 @@ const greenBtn = document.querySelector('#greenBtn')
 const redBtn = document.querySelector('#redBtn')
 const eraserBtn = document.querySelector('#eraser')
 const resetBtn = document.querySelector("#reset")
-const cell = document.querySelector('#cell')
 
 
 
@@ -17,10 +16,21 @@ function createDiv(num) {
     container.style.gridTemplateColumns = `repeat(${num} ,1fr)`;
     for(let i = 0; i < num* num; i++) {
         let cell = document.createElement('div');
-        cell.setAttribute("id","cell")
+        cell.setAttribute('id', 'cell')
         container.appendChild(cell)
-}
+
+        
+            cell.addEventListener('mouseover', function (event) {
+            event.target.style.backgroundColor = 'blue'; 
+            event.target.style.border='none'
+            })
+   
+    }
 }
 createDiv(32)
+
+
+
+
 
 
