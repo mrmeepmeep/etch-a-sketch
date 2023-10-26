@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(165, 87, 87, 0.224);
+    background-color: rgba(160, 150, 150, 0.377);
 }
 .container-2 {
     display: flex;
@@ -20,23 +20,21 @@ body {
     margin-right: 50px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: 450px;
-    background-color: rgba(128, 128, 128, 0.151);
+.grid-container {
+    display: grid;
+    height: 512px;
+    width: 512px;
+    background-color: whitesmoke;
     border-color:rgba(0, 0, 0, 0.300);
-    border-radius: 0px 16px 16px 0px;
-    border-style: solid solid solid none;
+    border-radius: 16px;
     padding: 30px;
+    background-clip: padding-box;
+    box-shadow: 0 0 10px #000000;
 }
 
-.newDiv {
+#cell {
     border: 1px solid rgba(0, 0, 0, 0.030);
-    height: 25px;
-    width: 25px;
- 
+    
     
 }
 
@@ -45,23 +43,25 @@ body {
     justify-content: center;
     height: 5;
     padding: 10px 16px;
-    background-color:rgba(128, 128, 128, 0.350);
     margin-top: 38px;
     flex-direction: column;
     gap: 16px;
-    border-radius: 16px 0px 0px 16px;
-    border-style: solid none solid solid;
     border-color: rgba(0, 0, 0, 0.300);
 
 }
 
 .buttons button {
     border-style: none;
-    background-color: rgba(151, 137, 137, 0.35);
+    background-color: rgba(255, 255, 255, 0.864);
     border-radius: 16px;
     padding: 10px;
     box-shadow: 0 0 3px;
     color: rgba(0, 0, 0, 0.500);
+
+}
+button:hover {
+    background-color: rgba(161, 138, 138, 0.3);
+    color: whitesmoke;
 }
 #eraser {
     margin-top: 150px;
